@@ -2,7 +2,7 @@
 
 Hay 2 tipos de elemntos en HTML:Inline,Block
 
-  E jemplos de etiqeutas inline:
+  Ejemplos de etiqeutas inline:
 
   Flow de elemntos en forma horizontal.
 
