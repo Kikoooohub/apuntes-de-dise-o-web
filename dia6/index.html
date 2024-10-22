@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            background-color: bisque;
+            flex-direction: column;
+            display: flex;
+            
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column ;
+            background-color: bisque
+            
+        }
+
+        .fila2{
+            display: flex;
+        }
+
+        .header,
+        footer {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .footer {
+            display: flex;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        .sidebar {
+            display: flex;
+    
+            background-color: rgb(156, 98, 27);
+            flex-direction: column;
+        }
+
+        
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="header">
+            <p>logo</p>
+        </div>
+
+
+
+        <div class="fila2">
+
+            <div class="sidebar">
+                <h1>Barra lateral</h1>
+                <ul>
+                    <li><a href="./">Elemento 1</a></li>
+                    <li><a href="./">Elemento 2</a></li>
+                    <li><a href="./">Elemento 3</a></li>
+
+                </ul>
+
+
+            </div>
+
+            <div class="content">
+                <h1>Contenido principal</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit possimus saepe tempora consequuntur
+                    ipsam
+                    odit obcaecati accusantium laudantium ex. Porro ullam explicabo ipsum fugiat consequatur hic dolor
+                    corrupti accusantium voluptatem.</p>
+            </div>
+
+
+        </div>
+
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
