@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout cuadricula</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+        }
+
+        .card {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+
+            flex-grow: 1;/* puedes ser mas grande,pero no mas pequeño que la base*/
+            flex-shrink: 0;/* no puedes ser mas pequeño*/
+            flex-basis: 200px;/* valor inicial*/
+
+            /* flex:0 1 200px  ,   es lo mismo que lo que tenemos arriba */
+            /* el numero dentro del flex-grow especifica cuanto va ha crecer un elemento respetando los otros */
+            /* flex-shrink , es lo mismo solo que  la caja se pone mas pequeña en ves de ser mas grande.Lo mismo pero al reves. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+
+        <!-- div.card*6>{tarjeta $} -->
+
+        <div class="card">Tarjeta 1</div>
+        <div class="card">Tarjeta 2</div>
+        <div class="card">Tarjeta 3</div>
+        <div class="card">Tarjeta 4</div>
+        <div class="card">Tarjeta 5</div>
+        <div class="card">Tarjeta 6</div>
+
+    </div>
+
+</body>
+
+</html>

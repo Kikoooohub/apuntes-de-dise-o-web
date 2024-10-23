@@ -16,12 +16,11 @@
             background-color: bisque;
             flex-direction: column;
             display: flex;
-
+            height: 100px;
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
+            flex: 1;
             background-color: bisque
         }
 
@@ -29,12 +28,14 @@
             display: flex;
         }
 
-        .header,
-        footer {
+        .header {
             background-color: black;
+            display: flex;
             color: white;
-            font-size: 20px;
-            padding: 10px;
+            padding: 20px;
+            justify-content: space-between;
+
+
         }
 
         .footer {
@@ -42,13 +43,27 @@
             background-color: black;
             color: white;
             padding: 10px;
+            justify-content: center;
         }
 
         .sidebar {
             display: flex;
-
+            padding: 5px;
             background-color: rgb(156, 98, 27);
             flex-direction: column;
+            width: 200px;
+        }
+
+        .barra ul {
+            display: flex;
+            justify-content: flex-end;
+            color: azure;
+            gap: 40px;
+
+        }
+        .barra li a{
+text-decoration: none;
+color: azure;
         }
     </style>
 </head>
@@ -58,7 +73,19 @@
 
 
         <div class="header">
-            <p>logo</p>
+            <div>
+                <p>logo</p>
+            </div>
+
+            <div class="barra">
+                <ul>
+                    <li><a href="inicio">inicio</a></li>
+                    <li><a href="servicio">servicio</a></li>
+                    <li> <a href="acerca de">acerca de</a></li>
+                    <li> <a href="blog">blog</a></li>
+                </ul>
+            </div>
+
         </div>
 
 
@@ -79,16 +106,36 @@
 
             <div class="content">
                 <h1>Contenido principal</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum eligendi, asperiores maxime illo quod vero aliquid quia quos reiciendis exercitationem atque, qui neque magni sed, officia totam ut aut!
-                Eveniet voluptatibus quibusdam itaque, qui iure molestiae dolor labore commodi quos voluptates, exercitationem vitae. At magni reiciendis repellendus perspiciatis dicta aperiam eius hic voluptatibus voluptatem doloremque? Magni et nobis deserunt.
-                Recusandae, quisquam nostrum dolores exercitationem corrupti commodi ratione quibusdam molestias perferendis tenetur alias, blanditiis numquam molestiae atque, illo repudiandae dicta ullam soluta ab delectus dolore enim pariatur natus! Maxime, minus?
-                Animi, debitis impedit. Maxime debitis, totam nemo enim vitae, ex sapiente autem minus incidunt ullam voluptatem neque eligendi! Dolorem recusandae natus possimus quod illum quis modi odit nihil reiciendis hic?
-                Ab, repudiandae dignissimos velit harum aliquid non minima iure est rerum ea dolore, modi eligendi! Sequi quia placeat recusandae! Ex repudiandae laborum doloremque. A saepe eum ullam sint repudiandae blanditiis!
-                Perspiciatis facilis labore molestiae quod doloribus maxime provident ad sint veniam debitis? Delectus ut iure recusandae mollitia excepturi iusto quis! Magni quisquam eligendi rerum, unde quibusdam nulla enim vero nemo.
-                Doloremque officiis maxime atque sapiente soluta! Blanditiis eos modi commodi cumque nobis corporis veritatis. Dignissimos, magni velit, facere repellat accusantium laudantium nisi corporis error praesentium, mollitia eligendi libero sunt laborum.
-                Ratione natus mollitia quae, aspernatur placeat labore, minus quisquam excepturi cum sit error distinctio, nostrum vel qui quo? Magnam debitis adipisci veniam delectus consequuntur perferendis suscipit quibusdam repellat totam molestiae!
-                Necessitatibus laborum molestiae doloremque tempore quasi cum ducimus magni illo unde odit quaerat maiores rerum fugit, aut quae architecto sed. Doloribus sapiente amet quisquam distinctio sunt possimus, impedit autem optio?
-                Laudantium alias voluptas accusamus sequi ab, placeat ex asperiores fuga vero dignissimos a veritatis quia unde distinctio dolores minima corrupti, nobis totam aperiam iusto. Esse doloribus harum praesentium facere? Repellendus!.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum eligendi, asperiores
+                    maxime illo quod vero aliquid quia quos reiciendis exercitationem atque, qui neque magni sed,
+                    officia totam ut aut!
+                    Eveniet voluptatibus quibusdam itaque, qui iure molestiae dolor labore commodi quos voluptates,
+                    exercitationem vitae. At magni reiciendis repellendus perspiciatis dicta aperiam eius hic
+                    voluptatibus voluptatem doloremque? Magni et nobis deserunt.
+                    Recusandae, quisquam nostrum dolores exercitationem corrupti commodi ratione quibusdam molestias
+                    perferendis tenetur alias, blanditiis numquam molestiae atque, illo repudiandae dicta ullam soluta
+                    ab delectus dolore enim pariatur natus! Maxime, minus?
+                    Animi, debitis impedit. Maxime debitis, totam nemo enim vitae, ex sapiente autem minus incidunt
+                    ullam voluptatem neque eligendi! Dolorem recusandae natus possimus quod illum quis modi odit nihil
+                    reiciendis hic?
+                    Ab, repudiandae dignissimos velit harum aliquid non minima iure est rerum ea dolore, modi eligendi!
+                    Sequi quia placeat recusandae! Ex repudiandae laborum doloremque. A saepe eum ullam sint repudiandae
+                    blanditiis!
+                    Perspiciatis facilis labore molestiae quod doloribus maxime provident ad sint veniam debitis?
+                    Delectus ut iure recusandae mollitia excepturi iusto quis! Magni quisquam eligendi rerum, unde
+                    quibusdam nulla enim vero nemo.
+                    Doloremque officiis maxime atque sapiente soluta! Blanditiis eos modi commodi cumque nobis corporis
+                    veritatis. Dignissimos, magni velit, facere repellat accusantium laudantium nisi corporis error
+                    praesentium, mollitia eligendi libero sunt laborum.
+                    Ratione natus mollitia quae, aspernatur placeat labore, minus quisquam excepturi cum sit error
+                    distinctio, nostrum vel qui quo? Magnam debitis adipisci veniam delectus consequuntur perferendis
+                    suscipit quibusdam repellat totam molestiae!
+                    Necessitatibus laborum molestiae doloremque tempore quasi cum ducimus magni illo unde odit quaerat
+                    maiores rerum fugit, aut quae architecto sed. Doloribus sapiente amet quisquam distinctio sunt
+                    possimus, impedit autem optio?
+                    Laudantium alias voluptas accusamus sequi ab, placeat ex asperiores fuga vero dignissimos a
+                    veritatis quia unde distinctio dolores minima corrupti, nobis totam aperiam iusto. Esse doloribus
+                    harum praesentium facere? Repellendus!.</p>
             </div>
 
 
