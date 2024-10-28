@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout navbar</title>
+    <style>
+        /* Reset de HTML */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Alinea los elementos de la barra de navegación */
+            align-items: center; /* Centra verticalmente los elementos */
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+        .logo a {
+            text-decoration: none;
+            color:white;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative; /* Establece la posición relativa para el menú desplegable */
+        }
+
+        .dropdown-menu {
+            list-style:none;
+            display: none; /* Oculta el menú desplegable por defecto */
+            position: absolute; /* Establece la posición absoluta */
+            top: 100%; /* Coloca el menú desplegable debajo del elemento padre  también podía usar pixeles */
+            left: 0;
+            background-color: red;
+            padding: 10px;
+            width: 150px;
+
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block; /* Muestra el menú desplegable al pasar el ratón sobre el elemento padre */
+        }
+
+
+        /* opcional variante right! */
+        .dropdown-menu.right {
+            left: auto; /* Restablece la posición izquierda a automática */
+            right: 0; /* Coloca el menú desplegable en el lado derecho */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/" title="Home">Logo</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Servicios</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Servicio 1</a></li>
+                    <li><a href="#">Servicio 2</a></li>
+                    <li><a href="#">Servicio 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+
+            
+                <!-- dropdown right -->
+                <!-- 
+                <li class="dropdown">
+                    <a href="#">drop 2</a>
+                    <ul class="dropdown-menu right">
+                        <li><a href="#">Servicio 1</a></li>
+                        <li><a href="#">Servicio 2</a></li>
+                        <li><a href="#">Servicio 3</a></li>
+                    </ul> 
+                </li>
+                -->
+        </ul>
+    </div>
+
+    <script>
+
+        // No funciona con multiples elementos dropdown
+
+        // Opcion de JS para usar right o left del dropdown según la posición.
+        
+        /* 
+        // Obtener el elemento del menú desplegable
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        // Obtener la posición del menú desplegable
+        const dropdownMenuRect = dropdownMenu.getBoundingClientRect();
+
+        // Obtener el ancho de la ventana del navegador
+        const windowWidth = window.innerWidth;
+
+        // Verificar si el menú desplegable está demasiado cerca del borde derecho de la pantalla
+        if (windowWidth - dropdownMenuRect.right < 200) {
+            dropdownMenu.classList.add('right');
+            console.log("derecha");
+        } else {
+            dropdownMenu.classList.remove('right');
+            console.log("izq");
+        }*/
+    </script>
+
+    
+</body>
+</html>

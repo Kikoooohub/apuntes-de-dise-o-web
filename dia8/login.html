@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
     <style>
+        input{
+            display: block;
+            margin: 10px;
+        }
+         
+        
         
     </style>
 </head>
 <body>
-    <h1>Login de usuarios</h1>
+     <!-- Formulario de login -->
+     <form action="/home.html" method="GET">
 
-    <form action=".login.html" method="GET"></form>
-        <!--usuarios-->
-        <input type="text"
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
 
-        <!--clave-->
-        <input type="password"><
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
 
+        <input type="submit" value="Login"></input>
     </form>
     
 </body>
