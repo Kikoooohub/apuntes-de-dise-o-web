@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia9</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+
+        .yellow {
+            background-color: yellow;
+            top: 20px;
+            left: 20px;
+
+
+            /* las dieferentes posiciones */
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+
+
+        }
+
+        .absolute {
+            position: absolute;
+
+        }
+
+        .sticky {
+            position: sticky;
+
+        }
+
+        .fixed {
+            position: fixed;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Positions</h1>
+    <h2> static</h2>
+    <p>Normal,no se aplica ninguna propiedad de posicion.Utiliza el flow normal de documento</p>
+    <div class="container"></div>
+    <div class="box"></div>
+    <div class="box yellow static">static</div>
+    <div class="box"></div>
+    <h2>relative</h2>
+    <p>afecta la psoicion <strong>top-right botttom-left</strong>,y conserva su espacio.</p>
+    <div class="container"></div>
+    <div class="box"></div>
+    <div class="box yellow relative">static</div>
+    <div class="box"></div>
+
+    <h2>absolute</h2>
+    <p>afectan la posicion<strong>top right bottom left</strong><br> pero no ocupa escapio original<br>se posiciona con
+        respecto al padre mas cercano que tenga una propiedad position diferente de STATIC(normalmnete relative).Si no
+        la encuntra,utiliza el body.</p>
+    <div class="container relative"></div>
+    <div class="box"></div>
+    <div class="box yellow absolute">static</div>
+    <div class="box"></div>
+    <h2>fixed</h2>
+    <p>afecta las posicion,no ocupa escapio,se posiciona respecto al navegador(viewport),se mantiene fijo en la pantalla(no se muevo incluso con el scroll</p>
+    <div class="container"></div>
+    <div class="box"></div>
+    <div class="box yellow fixed"
+    style="right:20px
+    bottom:20px
+    left:unset
+    top:unset;">fixed</div>
+    <div class="box"></div>
+
+    <div class="box"></div>
+    <h2>sticky</h2>
+    <div class="container"></div>
+    <div class="box"></div>
+    <div class="box yellow static">static</div>
+    <div class="box"></div>
+
+</body>
+
+</html>
