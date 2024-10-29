@@ -32,6 +32,11 @@
 
             /* las dieferentes posiciones */
         }
+        .h2{
+            border-top: 1px solid grey;
+            margin: 20px 0 40x 0;
+
+        }
 
         .static {
             position: static;
@@ -88,18 +93,24 @@
     <h2>fixed</h2>
     <p>afecta las posicion,no ocupa escapio,se posiciona respecto al navegador(viewport),se mantiene fijo en la
         pantalla(no se muevo incluso con el scroll</p>
-    <div class="container">
-        <div class="box"></div>
         <div class="box yellow fixed" style="right:20px
     bottom:20px
     left:unset
     top:unset;">fixed</div>
+    <div class="container">
+        <div class="box"></div>
         <div class="box"></div>
     </div>
 
     <div class="box"></div>
     <h2>sticky</h2>
-    <div class="container">
+    <p>es un comportamiento entre relative y fixed utiliza el top y left como punto de adhesion.Se posiciona respecto a la ventana del navegador(viewport)<br> Se queda fijo en la pantalla(fixed) hasta que el elemento padre se acaba.</p>
+    <div class="container"
+        style="height: 300px;
+        width: 400px;
+        overflow: scroll;
+        padding: 20px;
+        border: 1px solid gray;"></div>
         <div class="box"></div>
         <div class="box yellow static">static</div>
         <div class="box"></div>
