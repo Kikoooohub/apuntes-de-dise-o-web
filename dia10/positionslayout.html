@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position layouts</title>
+
+    <link rel="stylesheet" href="https://fontawesome.com/v4/icon/youtube-play">
+
     <style>
         * {
             box-sizing: border-box;
@@ -26,6 +29,7 @@
             background-image: linear-gradient(160deg, #6C52D9 0%, #9B8AE6 127%);
             position: sticky;
             top: 0;
+
 
 
         }
@@ -60,8 +64,9 @@
             display: flex;
             width: 30px;
             height: 500px;
-            background-color: #3EDFD7;
-            padding: 1px;
+            background-color: #27e6dc;
+
+
         }
 
         .main {
@@ -69,7 +74,13 @@
             width: 70%;
             flex-direction: column;
             gap: 10px;
+            /*     flex-grow: 1;          */
 
+
+        }
+
+        .main.item {
+            height: 200px;
         }
 
         .content-1,
@@ -78,7 +89,7 @@
             display: flex;
             flex-direction: column;
             background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
-         
+
 
         }
 
@@ -86,40 +97,70 @@
             display: flex;
             flex: 1;
             align-items: center;
-          
+            gap: 20px;
+
         }
 
         .content-row {
             display: flex;
             flex: 1;
-           
+            gap: 20px;
+
         }
-        .content-2{
+
+        .content-2 {
             display: flex;
             flex: 1;
         }
-        .content-3{
+
+        .content-3 {
             display: flex;
-            flex:1
+            flex: 1
         }
 
 
         .footer {
-          height: 100%;
-          max-width: 100%;
-          bottom: 0;
-          position: relative;
-        background-color: #6C52D9;
-        margin-top: 0%;
+            height: 100%;
+            max-width: 100%;
+            bottom: 1;
+            position: relative;
+            background-color: #6C52D9;
+            height: 30vh;
+
+
         }
-        body{
-            height: 100vh;
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            background-color: white;
+            border-radius: 50%;
+            width: 39px;
+            height: 39px;
+            ;
+        }
+
+        .whatsapp i {
+            font-size: 48px;
+            color: green;
+            margin-top: -3px;
+            margin-left: -1px;
+
+
+        }
+
+        body {
+            /*desactivar cuando ultilizamos position*/
+            /*height: 100vh;*/
+
+
         }
     </style>
 </head>
 
 <body>
-    <div class="item header>">header</div>
+    <div class=" item header">header</div>
 
     <div class="container">
         <div class="sidebar item">sidebar
@@ -135,7 +176,40 @@
 
         </div>
     </div>
+
+
+    <!--icono de whatsapp-->
+    <div class="whatsapp">
+        <i class="fa fa-whatsapp"></i>
+
+    </div>
+
+
+
+
     <div class="footer item">footer</div>
+
+
+
+    <script>
+        /*
+        // 1. Seleccionar el DIV a modificar
+        const mainDiv = document.querySelector('.main');
+    
+    // 2. Crear un HTML
+    const filaHTML = `
+            <div class="content-row">
+                <div class="content-2 item">Contentido 2</div>
+                <div class="content-3 item">Contenido 3</div>
+            </div>
+        `;
+    
+    // 3. Agregar la caja "filaHTML" dentro de main 
+    mainDiv.innerHTML += filaHTML;
+    mainDiv.innerHTML += filaHTML;*/
+    </script>
+
+
 </body>
 
 </html>

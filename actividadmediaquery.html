@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+
+    <link rel="stylesheet" href="./dia11/css/./Practica.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title">
+            <h1 class="title-mobile">Mobile</h1>
+            <h1 class="dekstop">Dekstop</h1>
+            <h1 class="Tablet">tablet</h1>
+        </div>
+
+        <picture>
+
+            <source media="(min-width:600px)" srcset="tablet.jpeg">
+            <source media="(min-width:1024px)" srcset="dekstop.jpeg">
+
+            <img src="iphone.jpeg" alt="mobile">
+        </picture>
+    </div>
+
+
+</body>
+
+</html>
