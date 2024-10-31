@@ -1,4 +1,59 @@
-body{
-    background-color: blue;
-    color: red;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+@media screen and (max-width:800px) {
+    body {
+        background-color: aqua;
+
+    }
+
+    .desktop,
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width:800px) and (max-width:1180px) {
+    body {
+        background-color: rgb(98, 255, 0);
+
+    }
+
+    .desktop,
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: flex;
+    }
+
+
+
+    @media screen and (min-width:1180px) {
+        body {
+            background-color: #ff001e;
+        }
+
+        .mobile,
+        .tablet {
+            display: none;
+            flex-direction: column-reverse;
+        }
+
+        .desktop {
+            display: flex;
+        }
+
+
+    }
