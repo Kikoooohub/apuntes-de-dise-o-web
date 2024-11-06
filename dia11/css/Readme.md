@@ -65,12 +65,12 @@ bodybackground:lightgreen;
 
 
 ## Tips para ultilizarlo
-- Sobreescriben las reglas CSS,peri no possen mayor especifificidad por lo tanwto los MQ deben ir al final de nuestro CSS.
+- Sobreescriben las reglas CSS,perono possen mayor especifificidad por lo tanto los MQ deben ir al final de nuestro CSS.
 - Deben ultilizar el mismo selector y reglas para que reemplace las reglas que deseamos.
 - Pensar de antemano los breakpoints.
-- Podemos utilizar uan @media para cada selector o una sola para todos los selectores(recomendada)
+- Podemos utilizar una @media para cada selector o una sola para todos los selectores(recomendada)
 
--intentemos desarollar siempre primero el movil(mobioe first!)
+-intentemos desarollar siempre primero el movil(mobile first!)
 
 ```css
 /*moviles*/

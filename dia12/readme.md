@@ -52,7 +52,7 @@ elementos que suelen estar en un aside son:
 -Inforamacion
 
 ## Seccion
-Define una seccion de uan pagina,donde se agrupa los contenidos relacionados,normalmente incluye un titulo.Una web se compone de multiples secciones y cada una con su propio contenido y proposito
+Define una seccion de una pagina,donde se agrupa los contenidos relacionados,normalmente incluye un titulo.Una web se compone de multiples secciones y cada una con su propio contenido y proposito
 
 Ejemplos
 -Capitulo
