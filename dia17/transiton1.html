@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones 1</title>
+    <style>
+        body {
+            display: flex;
+            gap: 5px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box1 {
+            transition:  2s;
+            height: 2s;
+            background-color: 2s;
+
+
+        }
+
+        .box1:hover {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+        }
+
+        .box2 {
+            /* ease linear ease-in ease-out es-in-out cubic-zeier*/
+            transition-duration: 4s;
+        }
+
+        .box2:hover {
+            width: 500px;
+        }
+
+        .box3 {
+            transition: all 1s;
+            /*No usar all*/
+            border: 1px dotted green;
+        }
+
+        .box3:hover {
+            border: 4px dotted rgb(0, 15, 128) dotted;
+            rotate: 70deg;
+        }
+        .box3:focus{
+            background-color: green;
+        }
+        .box4{
+            background-color: rgb(77, 21, 51);
+           width: 300px;
+           height: 300px;
+           transition-duration:  3s;
+          
+
+
+        }
+        .box4:hover{
+            background-color: aqua;
+            width: 500px;
+            transition: widht 2s ease 0.4;background-color: 2s ease 0.4s;
+            
+
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <a href="#" class="box box3">Click me</a>
+
+   <button class="box box4">Click me</button>
+</body>
+
+</html>
