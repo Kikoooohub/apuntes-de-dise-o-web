@@ -18,7 +18,7 @@
         }
 
         .box1 {
-            transition:  2s;
+            transition: 2s;
             height: 2s;
             background-color: 2s;
 
@@ -51,24 +51,44 @@
             border: 4px dotted rgb(0, 15, 128) dotted;
             rotate: 70deg;
         }
-        .box3:focus{
+
+        .box3:focus {
             background-color: green;
         }
-        .box4{
+
+        .box4 {
             background-color: rgb(77, 21, 51);
-           width: 300px;
-           height: 300px;
-           transition-duration:  3s;
-          
+            width: 300px;
+            height: 300px;
+            transition-duration: 3s;
+
 
 
         }
-        .box4:hover{
+
+        .box4:hover {
             background-color: aqua;
             width: 500px;
-            transition: widht 2s ease 0.4;background-color: 2s ease 0.4s;
-            
 
+            background-color: 2s ease 0.4s;
+
+
+        }
+
+        .box5 {
+            background-color: purple;
+            width: 669px;
+            height: 300px;
+            transition-duration: 6s;
+
+        }
+
+        .box5:hover {
+            background-color: burlywood;
+            width: 100px;
+            transition-delay: 1s;
+            transition-duration: 4s;
+            transform: translate (-200px) ease-in;
         }
     </style>
 
@@ -83,7 +103,10 @@
     <div class="box box2"></div>
     <a href="#" class="box box3">Click me</a>
 
-   <button class="box box4">Click me</button>
+    <button class="box box4">Click me</button>
+
+    <div class="box box5">Caja 1</div>
+
 </body>
 
 </html>
