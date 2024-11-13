@@ -33,9 +33,12 @@
             transition: transform 0.6s ease-in-out;
         }
 
-        .menu:hover ul {
+        .menu ul.show {
             transform: translateX(0);
+
         }
+
+
 
         /*Transicion Tarjeta-Active*/
         .card {
@@ -51,6 +54,16 @@
             box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.2);
 
         }
+        .buton{
+            border: 1px solid black;
+            background-color: yellowgreen;
+            transition: transform 0.6s ease-in-out background-color 0.4s ease;
+        }
+        .buton.change{
+            background-color: red;
+
+
+        }
     </style>
 </head>
 
@@ -60,22 +73,30 @@
     <input type="text">
 
 
-    
+
     <h3>Menu-Hover</h3>
     <div class="menu">
-        <button id="btn-menu">Menu notificacion</button>
-    <ul>
+        <button id="btn-menu">Menu</button>
+        <ul>
             <li><a href="a">Home</a></li>
             <li><a href="a">Blog</a></li>
             <li><a href="a">About</a></li>
         </ul>
     </div>
 
+
     <h3>Tarjeta-Active</h3>
     <div class="card">
         <h2>titulo</h2>
         <p>Click sobre mi o mantenme presionado(movil)</p>
     </div>
+
+
+    <h3>Ejemplo-Color</h3>
+<div class="buton"></div>
+    <button id="btn-change-color">Cambiar coloR</button>
+    <p id="text">Con esto cambias el color</p>
+
     <script>
 
         function cambiarClases(buttonSelector, targetSelector, className) {
@@ -91,8 +112,8 @@
             });
         }
 
-     
-        cambiarClases("#btn-menu","Menu-Hover","open",)
+cambiarClases("#btn-change-color","#text","change")
+        cambiarClases("#btn-menu", ".menu ul", "show",)
     </script>
 
 

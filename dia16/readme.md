@@ -147,6 +147,58 @@ En grid poseemos una nueva medida llamada fraccion"fr".
     grid-templete-columns:200px 1fr 1fr;/* el resto de la pnatlla dividida en 2  gracias a "fr".3 columnas 200px y el resto dividido*/.
 }
 ```
+
+## Grid templates areas
+
+
+Podemos nombrar celdas utilizando "grid-template-areas"
+
+```css
+/*container de 3 x 4 */
+.container{
+    display:grid
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(4,100px)
+    grid-gap:10px
+
+
+grid-template-areas:
+"sector1 sector1 sector2"
+"sector3 sector3 sector2"
+"sector4 sector5 sector5"
+"sector4 sector5 sector5";
+}
+
+
+
+
+
+.header{
+    grid-area:sector1
+
+}
+.caja-2{
+    grid-area:sector2
+
+}
+.caja-3{
+    grid-area:sector3
+
+}
+.caja-4{
+    grid-area:sector4
+
+}
+.caja-5{
+    grid-area:sector5
+
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
+
+
+
+```
+
 -minmax
 -repeat
 -templates-areas

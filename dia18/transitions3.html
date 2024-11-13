@@ -149,6 +149,7 @@
 
                     //a cada boton escucho si le hicieron click
                     targets.forEach(target => {
+                        
                         //le agregamos o quitamos la clase segun
                         target.classList.toggle(className);
                     });
@@ -158,7 +159,7 @@
         }
 
         /* La fucnion cambiar clases recibe 3 parametros
-        1.Seleccionarun buton con querySelector
+        1.Selecciona un buton con querySelector
         2.Selector de Target/destino/objetivo(querySelector)
         3.Nombre de 1 clase que vamos a agregar o quitar*/
         cambiarClases("#btn-dark", "body", "dark-mode");
@@ -171,20 +172,20 @@
 
 
 
-           
-           function cambiarClases(buttonSelector, targetSelector, className) {
-const lista_items = document.querySelectorAll(buttonSelector);
-const targets = document.querySelectorAll(targetSelector);
-lista_items.forEach(button => {
-    button.addEventListener('click', () => {
-        targets.forEach(target => {
-            target.classList.toggle(className);
-        });
 
-    });
-});
-}
-cambiarClases()
+        function cambiarClases(buttonSelector, targetSelector, className) {
+            const lista_items = document.querySelectorAll(buttonSelector);
+            const targets = document.querySelectorAll(targetSelector);
+            lista_items.forEach(button => {
+                button.addEventListener('click', () => {
+                    targets.forEach(target => {
+                        target.classList.toggle(className);
+                    });
+
+                });
+            });
+        }
+        cambiarClases()
 
 
     </script>
