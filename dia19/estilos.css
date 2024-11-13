@@ -1,0 +1,63 @@
+/* Estilos para el layout general */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: sidebar ocupa 1/3, main ocupa 2/3 */
+    grid-template-rows: 100px 1fr 100px; /* Tres filas: header (100px), contenido dinámico, footer (100px) */
+    grid-template-areas: 
+        "header header header"
+        "contenido contenido sidebar"
+        "footer footer footer";
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+/* Estilos para cada sección del layout */
+.header {
+    grid-area: header;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+    
+
+body{
+    background-color: white;
+    color: black;
+    transition: color 2s ease-out, background-color 2s ease-in;
+}
+
+body.btn-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.contenido {
+    grid-area: contenido;
+    background-color: #f3f3f3;
+    color: white;
+    padding: 10px;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color:gray;
+    color:white;
+    padding: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:gray;
+    color:white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

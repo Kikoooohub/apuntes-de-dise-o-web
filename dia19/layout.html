@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica diseño web</title>
+    <link rel="stylesheet" href="./estilos.css">
+
+    </head>
+    <body>
+        <div class="layout">
+            <header class="header">
+            <span>Header</span>
+            <button class="btn-dark">Luz</button>
+        </header>
+            <main class="contenido">Main Content</main>
+            <aside class="sidebar">Sidebar</aside>
+            <footer class="footer">Footer</footer>
+        </div>
+    </body>
+    <script>
+
+
+    function cambiarClases(buttonSelector, targetSelector, className) {
+        const lista_items = document.querySelectorAll(buttonSelector);
+        const targets = document.querySelectorAll(targetSelector);
+        lista_items.forEach(button => {
+            button.addEventListener('click', () => {
+                targets.forEach(target => {
+                    target.classList.toggle(className);
+                });
+
+            });
+        });
+    }
+    cambiarClases(".btn-dark","body","open")
+</script>
+    </html>
+    
+
+    
