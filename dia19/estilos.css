@@ -1,14 +1,13 @@
-
 .layout {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
-    grid-template-rows: 100px 1fr 100px; 
-    grid-template-areas: 
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
         "header header header"
         "content content sidebar"
         "footer footer footer";
-    height: 100vh; 
-    gap: 10px; 
+    height: 100vh;
+    gap: 10px;
 }
 
 
@@ -22,23 +21,23 @@
     justify-content: space-between;
     padding: 10px;
 }
-    
 
-body{
+
+body {
     background-color: white;
     color: black;
     transition: color 2s ease-out, background-color 2s ease-in;
 }
 
-body.open{
+body.open {
     background-color: #333;
     color: #fff;
 }
 
 
 .content {
-    grid-area: contenido;
-    background-color: #f3f3f3;
+    grid-area: content;
+    background-color: #d1bfbf;
     color: white;
     padding: 10px;
     height: 100vh;
@@ -46,15 +45,15 @@ body.open{
 
 .sidebar {
     grid-area: sidebar;
-    background-color:gray;
-    color:white;
+    background-color: gray;
+    color: white;
     padding: 10px;
 }
 
 .footer {
     grid-area: footer;
-    background-color:gray;
-    color:white;
+    background-color: gray;
+    color: white;
     text-align: center;
     display: flex;
     align-items: center;
