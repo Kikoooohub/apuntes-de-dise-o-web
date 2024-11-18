@@ -1,0 +1,17 @@
+/* Los formatos posibles son: ttf:truetype,otf:opentype,woff:woff,woff2:woff2 */
+
+
+@font-face{
+    font-family:"Mi super fuente";   /*Nombre de fuente personalizado por mi*/
+    src: url("../dia21/fonts/crotah.zip") format('truetype');
+}
+
+.u-txtCrotah{
+    font-family:"Crotah";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans-serif","Poppins";
+}
