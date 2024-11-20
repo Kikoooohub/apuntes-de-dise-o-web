@@ -68,7 +68,7 @@
     flex-direction: column;
 }
 
-.u-flexBow {
+.u-flexRow {
     display: flex;
     flex-direction: row;
 }
@@ -94,15 +94,19 @@
     background-color: var(--bg-primary);
     border: none;
     box-shadow: var(--box-shadow);
+    cursor: pointer;
+    padding: 10px;
+    min-width: 100px;
+    border-radius: 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Btn-icon {
+.Btn--icon {
 
-
-    border-radius: 100%;
+    border-radius: 30px;
+    min-width: unset;  /* UNSET -> cualquier valor que tenia antes se lo quita y le pone el por defecto */
 
 }

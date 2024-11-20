@@ -4,7 +4,7 @@
 @font-face {
     font-family: "Mi super fuente";
     /*Nombre de fuente personalizado por mi*/
-    src: url("../dia21/fonts/crotah.zip") format('truetype');
+    src: url(../fonts/crotah.zip) format('truetype');
 }
 
 .u-txtCrotah {
@@ -28,7 +28,8 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* posicion de la sombra 0px de izq a derecha & 2px de abajo y arriba & blur de 5px / rgbA a de alfa y opacidad */
+    z-index: 2;
 
 
 }
