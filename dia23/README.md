@@ -93,7 +93,7 @@ console.log("Me llamo",alumno.nombre" y tengo",alumno.edad,"años");
  2.Procesar Formularios:
  Verificar datos ingresados por el usuario y realizar formularios complejos de multiples secciones.
 
- 3.Se puede manejo de animaciones:Manipular efectos visuales y animaciones en nuestro web.
+ 3.Se puede manejo de animaciones:Manipular efectos visuales y animaciones en nuestro web.Hace que vuelvas a la misma pagina,cuando terminan las fotos.
 
  4.Manejo de Eventos:Responder a las acciones del usurarios.Ej:click,desplazarse por la web.
 
@@ -101,7 +101,7 @@ console.log("Me llamo",alumno.nombre" y tengo",alumno.edad,"años");
 
 
 ## Variables
->Son como CAJAS/CUBOS/Valdes/Cubeta que utilizamos para guardar informacion.Esta info puede ser un numero,un texto,una lista de cosas, y muchos otros tipos mas.Nos permite almacenar datos y luego usarlos o modicarlos en diferentes partes de nuestro programa.
+>Son como CAJAS/CUBOS/Valdes/ que utilizamos para guardar informacion.Esta info puede ser un numero,un texto,una lista de cosas, y muchos otros tipos mas.Nos permite almacenar datos y luego usarlos o modicarlos en diferentes partes de nuestro programa.
 > Definir una variable:Asignarle un nombre para encontrarla mas adelanete.
 > Asignar un valor:Es un poner cosa dentro de la caja,se realiza con el simbolo"=".
 
@@ -121,11 +121,11 @@ PI=4 //devuelve error
 
 -Simple `//`
 
--Simple en la misma linea `nombre="Sofia" // soy comentario`
+-Simple en la misma linea `nombre="Sofia" ; // soy comentario`
 
 -Bloque:`/*......*/
 
--Comentario de documentacion:se utiliza /**.....*/  para bloques de documentacion,este se usa para comentarios de fucniones y clases.
+-Comentario de documentacion:se utiliza /**.....*/  para bloques de documentacion,este se usa para comentarios de fucniones y clases.Sirve para comentar una funcion.
 
 ```js
 //soy simple
@@ -144,7 +144,7 @@ soy multilinea
  * @param {number} b-El segundo numero
  * @return {number} La suma de los 2 numeros ateriores(a+b)
  * 
- * */
+ *  En estos comentarios se explica que es cada cosa.*/
 
 fucntion sumar(a,b){
     return a+b;
@@ -160,12 +160,12 @@ fucntion sumar(a,b){
 
 ## Tipos de datos para nuestros variables
 
--numeros:enteros,decimales,postivos,negativos.(los decimales son con   "."  .ej:3.5)
--Cadewna de texto(Strings):textos,palabras,frases,1 letra.Van entre commilas dobre,triples y simples o backticks".
+- Numeros:enteros,decimales,postivos,negativos.(los decimales son con   "."  .ej:3.5)
+- Cadena de texto(Strings):textos,palabras,frases,1 letra.Van entre commilas dobre,triples y simples o backticks".
 
--Booleanos:True/False (true,false).
--Lista de cosas(Arrays):Se escriben entre corchetes[] y se separan con comas ",".
--Objeeto(Objetos):Coleccion de propiedades(caracteristicas) y metodos(funcionalidades) y se escriben con {}
+- Booleanos:True/False (true,false).
+- Lista de cosas(Arrays):Se escriben entre corchetes[] y se separan con comas ",".
+- Objeeto(Objetos):Coleccion de propiedades(caracteristicas) y metodos(funcionalidades) y se escriben con {}
 
 ```js
 
@@ -196,20 +196,30 @@ let esMenorDeEdad=true;
 
 //objetos o arrays (son constantes)
 //Listas/arrays/arreglos
+//Te lleva a otro lado
+//Todas la refernciales van con const
+
 
 const alumnosDeDW= ("Daniel","Jaime","Laura",)
 const edades =(25,32,30,29);
-const listaMix = [1,"Juan",true" {edad:18,nombre:"Laura"};
+const listaMix = [1,"Juan",true, {edad:18,nombre:"Laura"};
 
 const listaCompras=["tomate","lechuga"];
-listaCompras=["tomate,"Lechuga","papa"];//OK
+listaCompras=["tomate,"Lechuga","papa"];//OK;
 
 console.log(listaCompras[0]);//tomate
 console.log(listaCompras[2]);//papa
 
 }
 
+const alumno = {
+    nombre: "Juan",
+    edad: 16
+    saludar:function(name) {
+        console.log("Hoal",+name,"Mi nombre es Juan")
+    }
 
+}
 
 
 ```

@@ -234,28 +234,28 @@
 
             //cambiar el texto del boton
 
-document.body.classList.toggle("u-Dark");
+            document.body.classList.toggle("u-Dark");
 
-//cambiar el texto del boton
-if(document.body.classList.contains(u-Dark)){
-    btnDarkLight.textContent="dark-mode";
+            //cambiar el texto del boton
+            if (document.body.classList.contains(u - Dark)) {
+                btnDarkLight.textContent = "dark-mode";
 
-}else{
-    btnDarkLight.querySelector("span").innerText="Light_mode";
-}
-btnDarkLight.addEventListener("click", () => {
+            } else {
+                btnDarkLight.querySelector("span").innerText = "Light_mode";
+            }
+            btnDarkLight.addEventListener("click", () => {
 
-// agregar o quitar la clase u-Dark
-document.body.classList.toggle("u-Dark");
-if (document.body.classList.contains("u-Dark")) {
-    btnDarkLight.querySelector("span").innerText = "light_mode";
-} else {
-    btnDarkLight.querySelector("span").innerText = "dark_mode";
-}
+                // agregar o quitar la clase u-Dark
+                document.body.classList.toggle("u-Dark");
+                if (document.body.classList.contains("u-Dark")) {
+                    btnDarkLight.querySelector("span").innerText = "light_mode";
+                } else {
+                    btnDarkLight.querySelector("span").innerText = "dark_mode";
+                }
 
-});
+            });
 
-//btnDarkLight.querySelecotr("span.innerText=(document.body.classList.contains)")
+            //btnDarkLight.querySelecotr("span.innerText=(document.body.classList.contains)")
 
             //si se cumple la condicion
             if (iconsContainer.classlist.contains("u-flexCol")) {
@@ -270,7 +270,7 @@ if (document.body.classList.contains("u-Dark")) {
                 console.log("icons NOOO tiene u-flexCol")
                 btnDirection.textContent = "Columna";
             }
-            
+
         })
 
     </script>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> cLICKER EN JS </h1>
+
+    <button id="btnSuma"> Suma 1</button>
+    <button id="btnResta">Resta 1</button>
+
+    <button id="btnMulti">por 5</button>
+
+    <h2> Cantidad de Clicks</h2>
+    <div id="resultado">0000</div>
+
+
+
+
+    <script>
+
+
+        //  1.Declaramos varuables y obtemosd nuestros tags DOM
+
+
+        const btnSuma = document.querySelector("#btnSuma");
+        const btnResta = document.querySelector("#btnResta");
+        const btnMulti = document.querySelector("#btnMulti");
+        const txtResultado = document.querySelector("#resultado");
+
+        let resultado = 0;
+
+
+
+        // 2.Crear funciones
+
+        btnSuma.addEventListener("click", () => {
+            console.warn("Me hicieron click");
+            console.clear();
+
+
+            resultado++;
+
+
+            //las 2 formas fucncionan igual
+            // resultado = resultado + 1;
+
+            imprimirEnPantalla();
+        });
+
+
+        // restar
+        btnResta.addEventListener("click", () => {
+            console.clear();
+            console.warn("Me hicieron click");
+            resultado--;
+
+            imprimirEnPantalla();
+        });
+
+        // Multiplicar
+        btnMulti.addEventListener("click", () => {
+            console.clear();
+            console.warn("Me hicieron click");
+            resultado = resultado * 5;
+            imprimirEnPantalla();
+        });
+
+
+
+
+
+        //Imprimir resultado en la consola
+        txtResultado.innerHTML = resultado;
+
+
+
+
+        const imprimirEnPantalla = function () {
+            //Imrprimir resultados en la cosnola 
+            console.log(resultado);
+            txtResultado.innerHTML = resultado;
+        }
+
+
+
+
+
+
+
+        let a = 15
+        let b = 10
+
+
+        const suma = a + b;
+        console.error(suma);
+        console.error(b + a);
+
+        const resta = a + b;
+    console.error(resta);
+
+        let multiplicador = a * b; //150
+        let modulo = a % b; //0
+        let incremento = a++; //1//6
+        let decremnto = b--; //9
+
+
+
+
+    </script>
+</body>
+console
+
+</html>
