@@ -1,0 +1,57 @@
+
+
+
+<!--Esto aqui abajo es un ejemplo creaado para explicarme mejor de como funciona DOM(JS)-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM</title>
+</head>
+
+<body>
+    <h1 id="titulo">¡Hola Mundo!</h1> <!-- Texto inicial -->
+    <button onclick="cambiarTexto()">Cambiar Texto</button> <!-- Botón que llama a la función -->
+
+    <script>
+        function cambiarTexto() {
+            // Busca el elemento con ID "titulo" y cambia su texto
+            document.getElementById("titulo").textContent = "El texto ha cambiado.";
+        }
+    </script>
+</body>
+
+</html>
+<!--Esto aqui abajo es un ejemplo de como funciona  la validacion ed formulario-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Formulario</title>
+</head>
+
+<body>
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        <button type="button" onclick="validarNombre()">Enviar</button>
+    </form>
+
+    <script>
+        function validarNombre() {
+            let nombre = document.getElementById("nombre").value; // Tomamos el valor del campo
+            if (!nombre) {
+                // Si el valor está vacío
+                alert("Por favor, escribe tu nombre."); // Mostramos alerta
+            } else {
+                alert("¡Hola, " + nombre + "!"); // Si hay nombre, saludamos
+            }
+        }
+    </script>
+</body>
+
+</html>

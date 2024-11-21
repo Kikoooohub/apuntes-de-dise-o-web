@@ -21,7 +21,7 @@ let edad = Number("hola como andan"?);//NaN
 let noDefinido = Undefined;
 let nulo = null;
 let noEsUnNumero= Nan;
-const moverLaCola= function () {}  // se puede si con let tambien.
+const moverLaCola= function () {}  // se puede hacer con let tambien.
 const hoy = new Date();
 
 ```
@@ -29,7 +29,7 @@ const hoy = new Date();
 console.log (typeof NoDefinido)://undefined
 console.log(typeof vacio); //String
 console.log(typeof hoy);//objeto
-console.log(tyoeof moverLaCola);// function
+console.log(typeof moverLaCola);// function
 
 ```
 
@@ -39,14 +39,14 @@ console.log(tyoeof moverLaCola);// function
 console.log("Este es un mensaje informativo");
 //Mensaje de error
 console.log("Este es un mensaje de error");
-//Me    nsaje de advertencia
+//Mensaje de advertencia
 console.warn("Este es un mensaje de advertencia");
 //mensaje de informacion
 console.info("Este e sun mensaje de info");
 //Mensaje de depuracion
 console.debug(("Este es un mensaje de depuracion"));
 //Tbala de datos
-console.table("Manzana","Banana,)
+console.table("Manzana","Banana",);
 
 
 
@@ -54,7 +54,7 @@ console.table("Manzana","Banana,)
 
 # Operadores aritmeticos
 
-Se utilizan par a hacer operaciones matematicas en JS.
+Se utilizan por a hacer operaciones matematicas en JS.
 
 -Suma (+): Suma 2 valores
 -Restar(-):Resta 2 valores
