@@ -1,3 +1,8 @@
+
+
+
+
+
 let numero1 = 5; // Creamos una variable con valor 5
 let numero2 = 10; // Creamos otra variable con valor 10
 

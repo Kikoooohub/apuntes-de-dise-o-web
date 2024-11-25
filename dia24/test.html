@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa</title>
+</head>
+
+<body>
+    <button id="btnMulti">Multiplicar por 10</button>
+
+    <h2>Clicks</h2>
+    <div id="txtResultado">10</div> <!-- Aquí se mostrará el resultado -->
+
+
+</body>
+
+</html>
+
+<script>
+
+const btnMulti = document.querySelector("#btnMulti");
+
+let resultado = 25 ;
+
+btnMulti.addEventListener("click" ,() => {
+    console.log("they clicked me");
+    resultado = resultado * 10
+    ImprimirEnPantalla();
+
+
+})
+const ImprimirEnPantalla = function () {
+    console.log(resultado)
+    txtResultado.innerHTML = resultado ;
+}
+</script>
