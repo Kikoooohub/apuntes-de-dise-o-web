@@ -61,8 +61,10 @@ Se utilizan por a hacer operaciones matematicas en JS.
 -Multiplicacion (+):Multiplica 2 valores
 -Division (/):Divide 2 valores.
 -Modulo(%):Devuelve el resto de la division de enteros de 2 valores.
--Incremento(++):Aumentar en uno le valor de la variable.
--Decremento(--):
+ `` es util para saber si numero es par o impar o si un numero se puede dividir con otro.(En la mayoria de los casos si son pares se puede dividir,si no son impares problamente no se puede dividir y te dara un resultado impar)``.
+
+-Incremento(++):Aumentar en uno la valor de la variable.
+-Decremento(--): Sacar uno de la valor de la variable.
 
 
 ```js
