@@ -121,5 +121,24 @@ let resultado = frase.trim().  //elimina espcaios en blacno
 
                              console.log(resultado); // ME ENCANTA JAVASCRIPT EN DISEÑO WEB
 
-                             ```
                              
+                             
+
+
+```
+
+                            
+## Operacion Ternaria
+ //OVersion con operacion ternaria    
+ //Se puede usar solo cuando esta en una linea y solo cuando hay if y else.
+ 
+ ## Pop
+ ///Pop hace dos fucniones y una de ellas es que saca un elemento y otra es que te devuelvo algo (resultado).
+
+ ## Return
+
+ devuelve algo
+
+ ##
+
+ 

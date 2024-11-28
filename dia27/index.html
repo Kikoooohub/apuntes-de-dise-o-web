@@ -24,6 +24,8 @@
 </body>
 
 <script>
+
+    //https://tomascei.github.io/manual-md/?cap=diseno-web-js#js-introduccion
     //  1.
     {
         let text = "Hola Mundo"; {
@@ -48,19 +50,50 @@
     //3.
     {
         const palabras = "Lechuga,tomate,peras,manzana"; {
-            const palabras = text.split(" ");
+            const palabras = text.split(", ");
             console.log(palabras);
 
-            console.log = ("desde el indice 0 hasta el 18: ", palabras.slice(0));
+            //console.log = ("desde el indice 0 hasta el 18: ", palabras.slice(24));
+            //const resultado = listaItems(3);
+
+            //const cantDeItems = listaItems.lenght; // 4  /// usamos la propiedad lenght para calcular que son 4 elementos
+
+            //const resultado = listaitems(cantDeItems-1);  //obtenemos el indice "3" haciendo "4-1"
+
+
+            //usando el POP
+            const resultado = listaItems.pop();
+            console.log(listaItems);
+            console.log(resultado);
+
+            // llamo a  la fucnion con 1 argumento
+            ImprimirResultado(resultado);
 
         }
     }
     // 4.
-    console.log
+
+    //let tildes ="Amo las atardeceres";({
+
+    // posibles soluciones:
+    //const resultado = tildes.replace("Amo las atardeceres", "Amo los atardeceres") ;
+    // const resultado ="Amo las ataradeceres";
+
+
+    //imprimirResultado(resultado);
 
 
 
-    
+    /* let resultado = texto   .replace (/a/g,"a")
+     .replace (/a/g,"a")
+     .replace (/e/g,"e")
+     .replace (/i/g,"i")
+     .replace (/u/g,"u")
+     */
+
+
+
+
 
 
 
@@ -70,8 +103,18 @@
     const text1 = ("Manzana,Pera,Uvas");
     const text2 = ("manzana,pera,uvas");
 
-    console.log(text1 == text2) // true
-    console.log(text1 === text2) // false
+   let resultado ="Los arrays son iguales";
+    if (text1[0]) == text2[0] { resultado = "Los arrays son distintos"; }
+    if (text1[0]) == text2[0] { resultado = "Los arrays son distintos"; }
+    if (text1[0]) == text2[0] { resultado = "Los arrays son distintos"; }
+    
+    
+   // console.log(text1 == text2) // true
+   // console.log(text1 === text2) // false
+
+   // solucion 2 operador || - "o"
+   let resultado = "Los arrays son iguales";
+   if (array1[0]  != array2[0]) &&  (array[1] == array2[1]) &&  (array[1]) ==
 
 
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<pre>Ejercicios
+    Utilizando funciones, condicionales y operadores compartivos, realizar los siguientes ejercicios:
+    
+    Crear una función que reciba un número y devuelva si es par o impar.
+    Crear una función que reciba un número y devuelva si es positivo, negativo o cero.
+    Crear una función que si le envío una edad me devuelva si es mayor o menor de edad.
+    Crear una función a la que le indico el día de la semana y me devuelva si es un día laboral o no.
+    Crear una función donde sus parametros sean jugador1 y jugador2, y devuelva si el jugador1 le gana a jugador2 en un juego de "piedra", "papel" o "tijera"</pre>
+
+
+<button id="btnEj1">EJ1</button>
+<button id="btnEj2">Ej2</button>
+<button id="btnEj3">Ej3</button>
+<button id="btnEj4">Ej4</button>
+<button id="btnEj5">Ej5</button>
+<button id="btnEj6">Ej6</button>
+
+<body>
+
+
+
+    <script>
+        // 1. Ej.
+        let num1 = 2;
+
+        function esPar(num1) {
+            let txtParImpar = "Soy un numero impar";
+
+            if (num1 % 2 == 0) { // soy par
+                txtParImpar = "Soy numero par"
+
+                //return `Tu numero ${numero} es  ${txtPar}`;
+
+
+                const btnEj1 = document.querySelector("#Ej1");
+                btnEj1.addEventListener("click", () => {
+                    let num1 = prompt("Ingresa un numero");
+                    let resultado = esPar(numero);
+                    console.log(resultado);
+                    alert(resultado);
+                })
+
+
+
+
+
+
+
+
+
+
+
+                // Ej 2
+
+                let numero = 0
+                function verifarNumero(resultado)
+                    if (numero >= 0){
+                    console.log("es positvo");
+                }else{
+                        console.log("es negativo");
+
+                    }
+
+
+                    }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
