@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button {
+            border: 2px solid green;
+            border-radius: 20px 20px 20px 20px;
+            font-size: medium;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+    </style>
 </head>
 <pre>Ejercicios
     Utilizando funciones, condicionales y operadores compartivos, realizar los siguientes ejercicios:
@@ -16,12 +26,29 @@
     Crear una función donde sus parametros sean jugador1 y jugador2, y devuelva si el jugador1 le gana a jugador2 en un juego de "piedra", "papel" o "tijera"</pre>
 
 
-<button id="btnEj1">EJ1</button>
-<button id="btnEj2">Ej2</button>
-<button id="btnEj3">Ej3</button>
-<button id="btnEj4">Ej4</button>
-<button id="btnEj5">Ej5</button>
-<button id="btnEj6">Ej6</button>
+<h1>
+    1. Es par o impar?
+    <button id="btnEj1">ver</button>
+</h1>
+
+<h1>
+    2. Es positivo o negativo?
+    <button id="btnEj2">ver</button>
+</h1>
+<h1>
+
+    3. Mayor o menor de edad?
+    <button id="btnEj3">ver</button>
+</h1>
+<h1>
+    4. Dia laboral o no?
+    <button id="btnEj4">ver</button>
+</h1>
+<h1>
+    5. Quien gana?
+    <button id="btnEj5">ver</button>
+</h1>
+
 
 <body>
 
@@ -29,27 +56,25 @@
 
     <script>
         // 1. Ej.
-        let num1 = 2;
 
         function esPar(num1) {
+            let num1 = 2;
             let txtParImpar = "Soy un numero impar";
 
             if (num1 % 2 == 0) { // soy par
                 txtParImpar = "Soy numero par"
-
-                //return `Tu numero ${numero} es  ${txtPar}`;
-
-
-                const btnEj1 = document.querySelector("#Ej1");
-                btnEj1.addEventListener("click", () => {
-                    let num1 = prompt("Ingresa un numero");
-                    let resultado = esPar(numero);
-                    console.log(resultado);
-                    alert(resultado);
-                })
+            }
+        }
+        //return `Tu numero ${numero} es  ${txtPar}`;
 
 
-
+        const btnEj1 = document.querySelector('#Ej1');
+        btnEj1.addEventListener('click', () => {
+            let num1 = prompt("Ingresa un numero");
+            let resultado = esPar(numero);
+            console.log(resultado);
+            alert(resultado);
+        })
 
 
 
@@ -58,27 +83,92 @@
 
 
 
-                // Ej 2
-
-                let numero = 0
-                function verifarNumero(resultado)
-                    if (numero >= 0){
-                    console.log("es positvo");
-                }else{
-                        console.log("es negativo");
-
-                    }
-
-
-                    }
 
 
 
+        // Ej 2
+
+        function verifarNumero(resultado) {
+            let numero = 0;
+            if (numero >= 0) {
+                console.log("es positvo");
+            } else {
+                console.log("es negativo o 0")
+            }
+
+            const btnEj2 = document.querySelector('#Ej2');
+            btnEj2.addEventListener('click', () => {
+                console.log(resultado);
+                alert(resultado);
+
+            })
+        }
+        // ej 3
+
+        function verificarEdad(edad) {
+
+            if (edad >= 18) {
+                return "es mayor de edad.";
+            } else {
+                return "es menor de edad.";
+            }
+        }
+
+        const edad1 = 20;
+        const edad2 = 15;
+
+        console.log(verificarEdad(edad1)); // mayor de 18
+        console.log(verificarEdad(edad2)); // mneor de 18
 
 
+        // ej 4
+        function verificarDiaDeSemana(dia) {
+            if (dia = Lunes, Martes, Miercoles, Jueves, Viernes) {
+                return "dia laboral";
+            } else {
+                return "es finde";
+            }
+        }
+
+        const dia1 = Lunes;
+        const dia2 = Sabado;
+
+        console.log(verificarDiaDeSemana(dia1)); // devuelve laboral
+        console.log(verificarDiaDeSemana(dia2)); // devuelve finde
+
+
+        // juegoDePapel(jugador1, jugador2) {
+
+            if (jugador1 === jugador2) {
+                return "Es un empate.";
+            } else if (
+                (jugador1 === "piedra" && jugador2 === "tijera") ||
+                (jugador1 === "tijera" && jugador2 === "papel") ||
+                (jugador1 === "papel" && jugador2 === "piedra")
+            ) {
+                return "Jugador 1 gana.";
+            } else {
+                return "Jugador 2 gana.";
+            }
+        
+
+        // Ejemplo de uso
+        console.log(juegoDePapel("piedra", "tijera")); // Jugador 1 gana.
+        console.log(juegoDePapel("papel", "piedra")); // Jugador 1 gana.
+        console.log(juegoDePapel("tijera", "tijera")); // Es un empate.
 
 
     </script>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
