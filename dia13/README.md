@@ -44,10 +44,10 @@ input[type="checkbox"] { color: orange; }
 
 
 
-``````
-```html
 
-#Nomencaltura BEM (Block-Elements-Modifier)
+```
+
+# Nomencaltura BEM (Block-Elements-Modifier)
 -sus nombres son en kebab-case
 -bloques".boton",."formulario,."navegacion"
 -**elemntos**

@@ -2,7 +2,7 @@
  Apuntes de alumnos dia 1
 
 
-soy un ejempl de codigo HTML 
+soy un ejemplo de codigo HTML 
 
 ´´´´
 <p> soy un parrafo <p>

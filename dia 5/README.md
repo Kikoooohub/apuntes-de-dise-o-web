@@ -1,13 +1,14 @@
-<INLINE VS bLOCK>
+
+## Inline y Block etiquetas
+
+<Inline VS Block>
 
 Hay 2 tipos de elemntos en HTML:Inline,Block
 
   Ejemplos de etiqeutas inline:
-
   Flow de elemntos en forma horizontal.
 
-  Ejemplos de etiqeutas inline:
-
+  Ejemplos de etiquetas inline:
 
 -las imagenes `<img>`
 -botones `<button>`
@@ -18,7 +19,7 @@ Hay 2 tipos de elemntos en HTML:Inline,Block
 Ejemplos de etiquetas en bloque:
 
 -los div `<div>`
--parrofos p
+-parrofos <p>
 -headers h1,h2,h3....h6
 -tablas `<table>`
 -regletas `<hr>`
@@ -28,7 +29,7 @@ Ejemplos de etiquetas en bloque:
 
 El box model es la forma en que se estructura un elemento html.Cada elemnto tiene un content,padding,border y margin
 
--El margin es el espacio que hay entre un elemnto y otro.
--El boreder:es el borde del elemnto.
+-El margin es el espacio que hay entre un elemento y otro.
+-El border:es el borde del elemnto.
 -El padding:es el espacio entre el contenido y el borde
 -El content:

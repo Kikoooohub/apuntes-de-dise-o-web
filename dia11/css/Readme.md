@@ -7,8 +7,8 @@ declaracion en CSS que nos permite definir los estilios de nuestra web.
 una media query se compone de multiples partes:
 - un @media es una palabra clave reservada
 -un tipo de media(screen,print,all,spreech)Media type.
--Operadores(and,not,only)
--breakpoint una condicion(max-widht,min-widht,etc)
+-Operadores (and,not,only)
+-breakpoint una condicion (max-widht,min-widht,etc)
 -un bloque de CSS
 
 
@@ -16,9 +16,11 @@ una media query se compone de multiples partes:
 ```css
 /*@media screen and (breakpoint){ }*/
 
-bodybackground:lightgreen;
+@media screen and (min widht:600px){
+    body{
+    background:lightgreen;
 }
-@media screen and(min widht:600px){
+}
 
 
 
@@ -44,7 +46,9 @@ bodybackground:lightgreen;
         color: white;
     }
 }
-```
+
+
+
 @Media 
 -all:todos los dispositivos
 -print:vista previa de impresion
@@ -65,12 +69,12 @@ bodybackground:lightgreen;
 
 
 ## Tips para ultilizarlo
-- Sobreescriben las reglas CSS,perono possen mayor especifificidad por lo tanto los MQ deben ir al final de nuestro CSS.
+- Sobreescriben las reglas CSS,pero no poseen mayor especifificidad por lo tanto los MQ deben ir al final de nuestro CSS.
 - Deben ultilizar el mismo selector y reglas para que reemplace las reglas que deseamos.
 - Pensar de antemano los breakpoints.
 - Podemos utilizar una @media para cada selector o una sola para todos los selectores(recomendada)
 
--intentemos desarollar siempre primero el movil(mobile first!)
+-intentemos desarollar siempre primero el movil (mobile first!)
 
 ```css
 /*moviles*/

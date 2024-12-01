@@ -13,6 +13,7 @@ b. split()
 
  c. slice()
  -Extrae una porcion de la cadena basada en indices de inicio y fin.
+
  El fin es sin incluir el indice final!
 
  ```js
@@ -68,7 +69,7 @@ console.log("Lista de colores: " ,csv.split);
 
 let frase = "Aprender javascript es divertido";
 console.log ( "Parte de frase:",frase.slice(9,19)) // javascript
-console.log ("Desed el indice 9 al final: ",frase.slice(9)); //"javascript es divertido";
+console.log ("Desde el indice 9 al final: ",frase.slice(9)); //"javascript es divertido";
 
 //replace
 
@@ -82,7 +83,7 @@ console.log ("Reemplazar todos los 'hola' por 'Hola'; " , frase.replace(/hola/g,
 //trim
 
 let frase = "      Hola mi  nombre es Luka " ;
-console.log( " Luego de hacer trim: "frase.trim()   ) // " Hola mi nombre es Luka
+console.log( " Luego de hacer trim: "frase.trim()   ); // " Hola mi nombre es Luka
 
 //includes 
 let frase = "El sol brilla en e cielo";
@@ -102,7 +103,7 @@ console.log("Termina con genial'?:" , frase.endsWith("genial"));
 // repeat
 
 let risa ="Ja";
-console.log("Me causa mucha gracia: ",risa.repeat(3))); //JaJaJa
+console.log("Me causa mucha gracia: ",risa.repeat(3)); //JaJaJa
 
 
 
@@ -121,24 +122,5 @@ let resultado = frase.trim().  //elimina espcaios en blacno
 
                              console.log(resultado); // ME ENCANTA JAVASCRIPT EN DISEÑO WEB
 
+                             ```
                              
-                             
-
-
-```
-
-                            
-## Operacion Ternaria
- //OVersion con operacion ternaria    
- //Se puede usar solo cuando esta en una linea y solo cuando hay if y else.
- 
- ## Pop
- ///Pop hace dos fucniones y una de ellas es que saca un elemento y otra es que te devuelvo algo (resultado).
-
- ## Return
-
- devuelve algo
-
- ##
-
- 

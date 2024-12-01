@@ -1,6 +1,6 @@
 ## Grid CSS
 
--Es un sistema para cracion de Layouts del estilo de tablas.Se compone de filas y columnas,y se pueden añadir unos dentro de otras.
+-Es un sistema para creacion de Layouts del estilo de tablas.Se compone de filas y columnas, y se pueden añadir unos dentro de otras.
 
 [Juego CSS descripcion]
 
@@ -27,7 +27,7 @@ Su ventaja frente a flex es que podemos crear layouts complejos con pocas lineas
 ```
 -----------------------------------------------------
 
-Podmeos indicar a cada item donde posocionarlo con reglas grid-row-start,
+Podemos indicar a cada item donde posocionarlo con reglas grid-row-start,
 grid-row-end,grid-column-start, y grid-column-end.
 
 Tener en cuenta que se cuenta desde 1 y no de 0!
@@ -96,7 +96,7 @@ Se puede simplificar aun mas utilizando ``grid-area``.
 }
 ```
 
-Si agreagamod mas bloques dentro de nuestro grid que cantidad de filas y columnas,grid creara automaticamente una nueva fila.Esto se llama `grid-implicita`.Podemos usar `grid-auto-rows:100px`.Para definir el tamaño de nuevas celdas.
+Si agreagamos mas bloques dentro de nuestro grid que cantidad de filas y columnas,grid creara automaticamente una nueva fila.Esto se llama `grid-implicita`.Podemos usar `grid-auto-rows:100px`.Para definir el tamaño de nuevas celdas.
 
 ```css
 

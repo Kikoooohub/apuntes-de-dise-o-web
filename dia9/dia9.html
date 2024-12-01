@@ -12,6 +12,10 @@
             box-sizing: border-box;
         }
 
+        body {
+            padding: 10px;
+        }
+
         .container {
             display: flex;
             bottom: 0;
@@ -32,7 +36,8 @@
 
             /* las dieferentes posiciones */
         }
-        .h2{
+
+        .h2 {
             border-top: 1px solid grey;
             margin: 20px 0 40x 0;
 
@@ -58,6 +63,8 @@
         }
 
         .fixed {
+
+
             position: fixed;
         }
     </style>
@@ -73,8 +80,9 @@
         <div class="box yellow static">static</div>
         <div class="box"></div>
     </div>
+
     <h2>relative</h2>
-    <p>afecta la psoicion <strong>top-right botttom-left</strong>,y conserva su espacio.</p>
+    <p>Afecta la posicion<strong> top-right botttom-left</strong> y conserva su espacio.</p>
     <div class="container">
         <div class="box"></div>
         <div class="box yellow relative">static</div>
@@ -82,7 +90,7 @@
     </div>
 
     <h2>absolute</h2>
-    <p>afectan la posicion<strong>top right bottom left</strong><br> pero no ocupa escapio original<br>se posiciona con
+    <p>Afecta la posicion<strong> top right y bottom left,</strong><br>pero no ocupa escapio original<br>se posiciona con
         respecto al padre mas cercano que tenga una propiedad position diferente de STATIC(normalmnete relative).Si no
         la encuntra,utiliza el body.</p>
     <div class="container absolute">
@@ -91,12 +99,13 @@
         <div class="box"></div>
     </div>
     <h2>fixed</h2>
-    <p>afecta las posicion,no ocupa escapio,se posiciona respecto al navegador(viewport),se mantiene fijo en la
-        pantalla(no se muevo incluso con el scroll</p>
-        <div class="box yellow fixed" style="right:20px
-    bottom:20px
-    left:unset
-    top:unset;">fixed</div>
+    <p>afecta la posicion,no ocupa escapio,se posiciona respecto al navegador(viewport),se mantiene fijo en la
+        pantalla(no se mueve incluso con el scroll</p>
+    <div class="box yellow fixed" style=
+    "right:20px;
+    bottom:20px;
+    left:unset;
+    top:unset">fixed</div>
     <div class="container">
         <div class="box"></div>
         <div class="box"></div>
@@ -104,16 +113,17 @@
 
     <div class="box"></div>
     <h2>sticky</h2>
-    <p>es un comportamiento entre relative y fixed utiliza el top y left como punto de adhesion.Se posiciona respecto a la ventana del navegador(viewport)<br> Se queda fijo en la pantalla(fixed) hasta que el elemento padre se acaba.</p>
-    <div class="container"
-        style="height: 300px;
+    <p>Es un comportamiento entre relative y fixed utiliza el top y left como punto de adhesion.Se posiciona respecto a
+        la ventana del navegador(viewport)<br> Se queda fijo en la pantalla(fixed) hasta que el elemento padre se acaba.
+    </p>
+    <div class="container" style="height: 300px;
         width: 400px;
         overflow: scroll;
         padding: 20px;
         border: 1px solid gray;"></div>
-        <div class="box"></div>
-        <div class="box yellow static">static</div>
-        <div class="box"></div>
+    <div class="box"></div>
+    <div class="box yellow static">static</div>
+    <div class="box"></div>
     </div>
 
 </body>

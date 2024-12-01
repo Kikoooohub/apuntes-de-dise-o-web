@@ -1,10 +1,10 @@
-Etiqeutas semanticas
+# Etiquetas semanticas
 
-ejemplos de etiqeutas no semanticas:Div,Span
--Ejemplos de etiquetas semanticas:form,table,article
+ejemplos de etiqeutas no semanticas: Div,Span
+-Ejemplos de etiquetas semanticas: form,table,article
 
 ## Header
-Encabeado de una paguna,seccion o articulo.Inlcuye como logo,Texto introductorio,menus de navegacion.
+Encabezado de una paguna,seccion o articulo.Inlcuye como logo,Texto introductorio,menus de navegacion.
 -Puede haber multiples header en una misma pagina
 -No puede haber un header dentro de un footer,o otro header
 
@@ -30,9 +30,9 @@ Pie de pagina de un sitio web o una seccion
 -Creditos
 
 ## Nav 
-Un conjunot de enlances de navegacion
+Un conjunto de enlances de navegacion.
 
--No todos los links deben estar dentro de Nav("<a></a>") deben de estar dentro de nav,ya que e-readers pueden omitir los navs al leer el contenido.
+-No todos los links deben estar dentro de Nav.("<a></a>") deben de estar dentro de nav,ya que e-readers pueden omitir los navs al leer el contenido.
 
 ## Main
 
