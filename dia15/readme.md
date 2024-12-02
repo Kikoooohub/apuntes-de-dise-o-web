@@ -19,7 +19,7 @@
 La unidad em es relativa al tamaño de la fuente del elemento del padre.
 Ejemplo:Si el padre tiene un font-size:10px , y un margin:3em,el margen sera de 30px.
 
--esta unidad es util para crear tamaños de texto y margenes que escalen con el tamaño de la fuente.Esto mejora la accsesibilidad y flexibildad del diseño.Es ideal para escalar elemntos proporciaonalmente al texto.Por defecto los navegadores asignan el font-size a 16px.
+-esta unidad es util para crear tamaños de texto y margenes que escalen con el tamaño de la fuente.Esto mejora la accsesibilidad y flexibildad del diseño.Es ideal para escalar elementos proporciaonalmente al texto.Por defecto los navegadores asignan el font-size a 16px.
 
 
 
