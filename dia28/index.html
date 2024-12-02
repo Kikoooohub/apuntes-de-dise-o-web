@@ -77,15 +77,6 @@
         })
 
 
-
-
-
-
-
-
-
-
-
         // Ej 2
 
         function verifarNumero(resultado) {
@@ -98,6 +89,8 @@
 
             const btnEj2 = document.querySelector('#Ej2');
             btnEj2.addEventListener('click', () => {
+                let numero = prompt("Ingresa un numero");
+                let resultado = verificarNumero(numero);
                 console.log(resultado);
                 alert(resultado);
 
@@ -120,10 +113,19 @@
         console.log(verificarEdad(edad1)); // mayor de 18
         console.log(verificarEdad(edad2)); // mneor de 18
 
+        const btnEj3 = document.querySelector('#Ej3');
+        btnEj3.addEventListener('click', () => {
+            let numero = prompt("Ingresa un numero");
+            let resultado = verificarEdad(edad);
+            console.log(resultado);
+            alert(resultado);
+        })
+
+
 
         // ej 4
         function verificarDiaDeSemana(dia) {
-            if (dia = Lunes, Martes, Miercoles, Jueves, Viernes) {
+            if (dia = Lunes || Martes || Miercoles || Jueves || Viernes) {
                 return "dia laboral";
             } else {
                 return "es finde";
@@ -135,8 +137,16 @@
         console.log(verificarDiaDeSemana(dia1)); // devuelve laboral
         console.log(verificarDiaDeSemana(dia2)); // devuelve finde
 
+        const btnEj4 = document.querySelector('#Ej4');
+        btnEj4.addEventListener('click', () => {
+            let dia = prompt("Ingreesa un numero")
+            let resultado = verificarDiaDeSemana(dia);
+            console.log(resultado);
+            alert(resultado);
+        })
 
-    // Ej 5
+
+        // Ej 5
         function juegoDePapel(jugador1, jugador2) {
 
             if (jugador1 === jugador2) {
@@ -154,6 +164,15 @@
         console.log(juegoDePapel("piedra", "tijera")); // Jugador 1 gana.
         console.log(juegoDePapel("papel", "piedra")); // Jugador 1 gana.
         console.log(juegoDePapel("tijera", "tijera")); // Es un empate.
+
+        const btnEj5 = document.querySelector('#Ej5');
+        btnEj5.addEventListener('click', () => {
+            let jugador = promtp("Ingresa un numero");
+            let resultado = juegoDePapel(jugador)
+            console.log(resultado);
+            alert(resultado);
+
+        })
 
 
     </script>
