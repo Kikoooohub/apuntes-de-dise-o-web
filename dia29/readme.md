@@ -42,11 +42,11 @@ cosnt res3 = cubo(3); //27
 
 // funcion flecha con 1 solo parametro y sin return
 //Recibe un numero y devuelve el doble de ese numero
-// optimizacion 1: quitar paremtros cuando tengo 1 solo paramtro
-// si mi codigo tiene una sola linea,puedo devolverlo sin llvaes,mi return.
+// optimizacion 1: quitar parametros cuando tengo 1 solo parametro
+// si mi codigo tiene una sola linea,puedo devolverlo sin llaves,mi return.
 
 const doble = a => a * 2;
-}
+
 
 console.log(doble(3)); // 6
 ```

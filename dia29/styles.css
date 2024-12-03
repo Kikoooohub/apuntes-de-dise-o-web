@@ -1,0 +1,25 @@
+div>div {
+    color: white;
+    width: 0%;
+    transition: width 1s;
+}
+
+.div-grafica {
+    width: 100%;
+    background: gray;
+    display: flex;
+    text-align: center;
+
+}
+
+
+.div-ganadas {
+    background: red;
+}
+
+.div-perdidas {
+    background: blue;
+}
+.div-txtResultado{
+    border:1px dashed black
+}
