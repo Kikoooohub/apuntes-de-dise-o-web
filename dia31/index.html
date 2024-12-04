@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .id{
+            border: 2px solid gray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="btnCantante">Shakira
+        <p>Hips don't lie</p>
+    </div>
+    <div id="btnCantante">Bad Bunny
+        <p>Titi me pregunto</p>
+    </div>
+
+    <div id="btnCantante">Adele
+        <p>Someone like you</p>
+    </div>
+    <div id="btnCantante">Ed Sheeran
+        <p>Shape of you</p>
+    </div>
+
+    <div id="btnCantante">Billie Eilish
+        <p>Bad Guy</p>
+    </div>
+
+
+
+
+    <script>
+        const lista_artistas = ["Shakira", "Bad Bunny", "Adele", "Ed Sheeran", "Billie Eilish"];
+
+        const lista_canciones = ["Hips don`t lie", "Titi me pregunto", "Someone like you", "Shape pf you", "Bad guy"];
+
+        const divCanciones = document.querySelector("listaCanciones");
+
+        lista_artistas.forEach((cancion, idx) => {
+            console.log(`${cancion} - id:${idx}`);
+            //InnnerHTML
+            divCanciones.innerHTML += `<div
+
+        )};
+
+
+    </script>
+
+</body>
+
+</html>
