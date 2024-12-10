@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 
     <script>
-        let i=-10;
+        /*  aqui intente hacerlo,pero n funciono : (
         while(i<0){
-    console.log(i);
-    i++;
-    i = (prompt("Ingresa un numero"));
-    
-}
+                let i=-10;
+        console.log(i);
+        i++;
+        i = (prompt("Ingresa un numero"));*/
+
+
+
+
+/**
+*otra forma de escribir esto:
+*
+* while(numero){total += parseInt(prompt("Ingrese un valor"))};
+console.log("El total es"+total);
+*/
+
+
+
+
+        let numero = -1;
+        let total = 0;
+
+        while (numero != 0) {
+            numero = prompt("ingrese un numero distinto a 0");
+            numero = Number(numero);
+            total = total + numero;
+            console.log(total);
+        }
 
     </script>
 </body>
+
 </html>

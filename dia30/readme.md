@@ -1,4 +1,4 @@
-## Bucles :For ,ForEach , While , Do-While
+## Bucles :For ,ForEach , While , Do-While,Map
 
 ```js
 //Bucle for es un bucle o un bloque que puede ejecutar u codigo ciertas cantidades de veces.
@@ -40,7 +40,7 @@ for(listaALumnos=0  listaAlumnos< 5;listaAlumnos++){
 ```js
 
 //Bucle forEach-A diferencia del for ,trabajamos con un metodo de listas y podemos acceder tanto al valor como a su indice.
-// Es puede ser un ejemplo.
+// Eso puede ser un ejemplo.
 /*const listaNumeros = [1,2,3,4,6];
 lista.forEach( (numero) => {
 console.log(`Elemento ${numero}`);
@@ -79,6 +79,8 @@ listaAlumnos.forEach(alumno => console.log(alumno));*/
 ```
 
 ```js
+
+// El while se va ha ejecutar si el dato es true
 let i=0;
 while(i<10){
     console.log(i);
@@ -94,3 +96,58 @@ while(i>-10){
     i++;
 }
 
+//break - se usa para salir del bucle.Leiste break ya esta ha salido del bucle
+
+```
+
+```js
+//
+let ii = 0;
+do {
+    console.log(ii);
+    ii+;
+}while(ii<10);
+
+
+
+
+        let numero = -1;
+        let total = 0;
+do{
+    numero = prompt("ingrese un numero distinto a 0");
+            numero = Number(numero);
+            total = total + numero;
+            
+
+        }while (numero != 0);
+        alert(total);
+
+
+
+//Bucle Map
+//A diferencia del forEach, el metodo Map devuelve una copia del array.
+//ninguno de los 2 ,modifica el array original.
+//Creates a new array from calling a fucntion 
+//does not change 
+const lista_nums= [1,2,3,7];
+lista_nums.map( (numero,index) =>{
+    console.log(`Numero ${numero} en la posiscion ${index}`);
+
+
+});
+
+
+
+// LOFI CAFE
+
+
+
+const lista_nums= [1,2,3,7];
+const lista_dobles = lista_nums.map((num) => {
+    //num = num*2
+    return num*2;
+
+    console.log(lista_nums); 
+    console.log(lista_dobles);// 2,4,6,14
+
+});
