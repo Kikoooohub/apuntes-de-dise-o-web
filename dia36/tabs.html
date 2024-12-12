@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+
+    <style>
+        .Tabs-contenido {
+            display: none;
+        }
+
+        .Tabs-buttons {
+            display: flex;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .Tabs-button {
+            padding: 10px;
+            background-color: #ddd;
+            border: 1px solid #b91f1f;
+        }
+
+        .u-active {
+            background-color: aqua;
+            border: 1px solid green;
+        }
+
+        .u-visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Tabs">
+
+        <ul class="Tabs-buttons">
+            <li data-tab="pagina1" class="Tabs-button">Home</li>
+            <li data-tab="pagina2" class="Tabs-button">Perfil</li>
+            <li data-tab="pagina3" class="Tabs-button">Tareas</li>
+        </ul>
+
+
+        <div class="Tabs-container">
+
+            <div id="pagina1" class="Tabs-contenido">
+                <h2> Pagina1 </h2>
+                <p>Contenido de pagina 1</p>
+            </div>
+
+            <div id="pagina2" class="Tabs-contenido">
+                <h2> Pagina2 </h2>
+                <p>Contenido de pagina 2</p>
+            </div>
+
+
+            <div id="pagina3" class="Tabs-contenido">
+                <h2> Pagina3 </h2>
+                <p>Contenido de pagina 3</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const listaBotones = document.querySelectorAll(".Tabs-button");
+        const listaPaginas = document.querySelectorAll(".Tabs-contenido");
+
+
+
+        //2. cramos funciones y eventlisteners
+
+
+
+
+        listaBotones.forEach(boton => {
+            boton.addEventListener("click", () => {
+
+                const targetId = boton.dataset.tab; // pagina 1 ,pagina 2
+                const target = document.getElementById(targetId);
+                console.log(targetId);
+
+
+                quitarClases();
+                target.classList.add("u-visible");
+
+                // agregar la clase active al Tabs
+                boton.classList.add("u-active");
+
+
+
+
+
+            });
+        });
+
+
+        // fucniones que quita las clases a mi elemnto
+        function quitarClases() {
+            listaBotones.forEach(item => {
+                item.classList.remove("u-active");
+            });
+            listaPaginas.forEach(pagina => {
+                pagina.classList.remove("u-visible");
+            });
+        }
+
+
+        //3. Inicializamos nuestro programa
+        listaBotones[0].click();
+    </script>
+
+</body>
+
+</html>

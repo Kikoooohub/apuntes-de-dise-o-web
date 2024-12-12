@@ -33,7 +33,7 @@ const cuadradoMap = numero.map(num => num * num);
 
 # Metodos de busqueda de Array
 
--Los metodos de busqueda se podrian considerar como un metodo map() modificada que devuelve tanto elementos tanto ellemntos como booleanos
+-Los metodos de busqueda se podrian considerar como un metodo map() modificada que devuelve tanto elementos como booleanos.
 
 ```javascript	
 
@@ -50,7 +50,7 @@ console.log(tieneTesla);
 
 
 // Every 
-const todosEmpiezanConB = lista_coches.every(coche = > coche [0] === "B");
+const todosEmpiezanConB = lista_coches.every(coche => coche [0] === "B");
 cosnole.log(todosEmpiezanConB);// false;
 
 
@@ -62,7 +62,7 @@ const cochesQueEmpiezanConB = lista_coches.filter ( coche => coche[0] === "B");
 const cochesConT = lista_coches.filter ( coche => coche.includes ("T"));
 
 
-const cochesConTyt = lista_coches.filter ( coche => coche.toLowerCase("t").includes("t"));
+const cochesConTyt = lista_coches.filter ( coche => coche.toLowerCase("T").includes("t"));
 console.log ( cochesConTyt);
 
 

@@ -19,6 +19,8 @@
     <form id="formTarea">
         <input id="txtTarea" type="text" name="tuTarea" placeholder="Ingrese una tarea" >
         <button type="submit">Agregar Tarea</button>
+
+        <input id="">
     </form>
 
 
@@ -39,12 +41,14 @@
         const txtTarea = document.getElementById("txtTarea");
         const boxTareas = document.getElementById("listaTareas");
 
+
         //const listaDeTareas = ["Ordenar el código JS", "Crear las Funciones", "Probar el programa"];
 
         const listaDeTareas = [
                 { id: 1,    titulo: "Ordenar el código JS", isCompletada: true  },
                 { id: 524,  titulo: "Crear las Funciones",  isCompletada: false },
-                { id: 1056, titulo: "Probar el programa",   isCompletada: false }
+                { id: 1056, titulo: "Probar el programa",   isCompletada: false },
+                { id : 123123 , titulo: "Probar tarea",isCompletada: false },
         ];
 
 
@@ -104,13 +108,48 @@
             
             // Tarea válida
             txtTarea.value = ""; // limpiar mi input
-            listaDeTareas.push(nuevaTarea); // push() es para agregar nuevo item a la lista
+            //listaDeTareas.push(nuevaTarea); // push() es para agregar nuevo item a la lista
             mostrarTareas();
-        }
+            
+            const nuevoID = parseInt(Math.random()*100);
+            
+        const objetoTarea = { id: nuevoID ,titulo :nuevaTarea, isCompletada :false }; 
+        console.log("Nueva tarea a agregar es:", objetoTarea);
+        mostrarTareas(); 
+                
+            }; 
+
+        
 
         function eliminarTarea(idTarea){
             alert("Eliminar tarea: "+idTarea);
             // Modificar mi lista, y eliminar la tarea idTarea
+
+
+            //1.metodo utilizando forEach y splice
+//listaDeTareas.forEach((tarea,index)=>{
+    //if(tarea.id==idTarea){
+
+       // listaDeTareas.splice(index, 1);
+
+   // }
+
+//});
+
+
+ //2. Metodo utilizando findIndex
+
+ //const posición = listaDeTareas.findIndex(tarea=>tarea.id==idTarea );
+ //listaDeTareas.splice(posición,1);
+
+
+// 3. Metodo utilizando filter
+
+listaDeTareas.filter(tarea=>tarea.id==!idTarea);
+
+
+
+
 
             mostrarTareas();
         }
@@ -118,9 +157,19 @@
         function completarTarea(idTarea){
             alert("Completando tarea: "+ idTarea);
             // modificar mi lista, y cambiar el booleano de true a false, o de false a true en la tarea específica
+
+
+            //1. buscar el elemnto con el id deseado
+            const tarea = listaDeTareas.find( (t) => t.id == idTarea );
+            console.log("Tarea encotrada: ", tarea);
             
-            mostrarTareas();
-        }
+            
+            if(tarea.isCompletada == true) {
+                tarea.isCompletada = false;
+            } else {
+                tarea.isCompletada = true;
+                mostrarTareas();
+        }};
 
         // -----------------------------------------------
         // 4. EventListeners
