@@ -7,62 +7,110 @@
     <title>Tabs</title>
 
     <style>
+        .Body{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        .Header{
+            background-color: #cbf5ee;
+            padding: 10px;
+            text-align: center;
+            height: 100px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid black;
+        }
+        .Titulo{
+           
+        }
+        .Tabs{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+          
+
+        }
         .Tabs-contenido {
             display: none;
         }
 
         .Tabs-buttons {
             display: flex;
+            justify-content: center;
             list-style: none;
             cursor: pointer;
+            gap: 5px;
         }
 
         .Tabs-button {
             padding: 10px;
             background-color: #ddd;
             border: 1px solid #b91f1f;
+            font-size: 20px;
+            border-radius: 1rem;
+            
+        }
+        .Container-Caja-Btn{
+            height: 100%;
+            background-color: #cbf5ee;
+            border-top: 2px solid black;
+            display: flex;
+            justify-content: center;
+
         }
 
         .u-active {
-            background-color: aqua;
+            background-color:lightblue;
             border: 1px solid green;
         }
 
         .u-visible {
             display: block;
         }
+        
     </style>
 </head>
 
-<body>
+<body class="Body">
+    <header class="Header">
+        <div class="Titulo">
+        <h1>Tabs</h1>
+        <p>Este es un ejemplo de tabs con JavaScript y CSS</p>
+    </div>
+    </header>
+    
+
+        
     <div class="Tabs">
-
-        <ul class="Tabs-buttons">
-            <li data-tab="pagina1" class="Tabs-button">Home</li>
-            <li data-tab="pagina2" class="Tabs-button">Perfil</li>
-            <li data-tab="pagina3" class="Tabs-button">Tareas</li>
-        </ul>
-
-
         <div class="Tabs-container">
-
+            
             <div id="pagina1" class="Tabs-contenido">
                 <h2> Pagina1 </h2>
                 <p>Contenido de pagina 1</p>
             </div>
-
+            
             <div id="pagina2" class="Tabs-contenido">
                 <h2> Pagina2 </h2>
                 <p>Contenido de pagina 2</p>
             </div>
-
-
+            
+            
             <div id="pagina3" class="Tabs-contenido">
                 <h2> Pagina3 </h2>
                 <p>Contenido de pagina 3</p>
             </div>
         </div>
     </div>
+
+    <div class="Container-Caja-Btn">
+    <ul class="Tabs-buttons">
+        <li data-tab="pagina1" class="Tabs-button"><strong>Home</strong></li>
+        <li data-tab="pagina2" class="Tabs-button"><strong>Perfil</strong></li>
+        <li data-tab="pagina3" class="Tabs-button"><strong>Tareas</strong></li>
+    </ul>
+</div>
+
 
     <script>
 

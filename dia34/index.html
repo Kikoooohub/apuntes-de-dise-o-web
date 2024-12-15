@@ -20,7 +20,7 @@
         <input id="txtTarea" type="text" name="tuTarea" placeholder="Ingrese una tarea" >
         <button type="submit">Agregar Tarea</button>
 
-        <input id="">
+      
     </form>
 
 
@@ -44,7 +44,7 @@
 
         //const listaDeTareas = ["Ordenar el código JS", "Crear las Funciones", "Probar el programa"];
 
-        const listaDeTareas = [
+        let listaDeTareas = [
                 { id: 1,    titulo: "Ordenar el código JS", isCompletada: true  },
                 { id: 524,  titulo: "Crear las Funciones",  isCompletada: false },
                 { id: 1056, titulo: "Probar el programa",   isCompletada: false },
@@ -122,37 +122,40 @@
         
 
         function eliminarTarea(idTarea){
-            alert("Eliminar tarea: "+idTarea);
+            alert("Eliminar tarea: "+ idTarea);
             // Modificar mi lista, y eliminar la tarea idTarea
 
-
+            
             //1.metodo utilizando forEach y splice
-//listaDeTareas.forEach((tarea,index)=>{
-    //if(tarea.id==idTarea){
+            listaDeTareas = listaDeTareas.filter( tarea => tarea.id != idTarea);
+            
+            
+            
+            
+                 //listaDeTareas.forEach((tarea,index)=>{
+                 //if(tarea.id==idTarea){
+                    
+                 // listaDeTareas.splice(index, 1);
+                
+                 // }
+                
+                 //});
+                
+                
+                 //2. Metodo utilizando findIndex
+                
+                 //const posición = listaDeTareas.findIndex(tarea=>tarea.id==idTarea );
+                 //listaDeTareas.splice(posición,1);
+                
+                
+                 // 3. Metodo utilizando filter
+                
+                mostrarTareas();
+            }
 
-       // listaDeTareas.splice(index, 1);
-
-   // }
-
-//});
-
-
- //2. Metodo utilizando findIndex
-
- //const posición = listaDeTareas.findIndex(tarea=>tarea.id==idTarea );
- //listaDeTareas.splice(posición,1);
-
-
-// 3. Metodo utilizando filter
-
-listaDeTareas.filter(tarea=>tarea.id==!idTarea);
 
 
 
-
-
-            mostrarTareas();
-        }
 
         function completarTarea(idTarea){
             alert("Completando tarea: "+ idTarea);
