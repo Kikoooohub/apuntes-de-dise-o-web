@@ -233,8 +233,12 @@ let usuarios_json =
     ]
 
 let usuariosJSONString = JSON.stringify(usuarios_json);
-
 let usuariosObjeto = JSON.parse(usuariosJSONString);
+console.log(usuariosObjeto);
+
+
+
+
 
 
 
