@@ -23,6 +23,7 @@ Ventajas:
 -Es mas seguro (ya que podemos usar textContent en vez de innerHTML).
 
 
+
 ```JS
 
 let  fragmento = document.createDocumentFragment();// etiqueta invisble "<>"
