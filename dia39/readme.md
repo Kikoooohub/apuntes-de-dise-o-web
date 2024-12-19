@@ -100,7 +100,7 @@ miPromesa.then(resultado => console.log (resultado))
 
 miPromesa.then(result => {
     console.log(result);
-    return"Exito2!";
+    return"Exito2!";     //  el primer return simepre tiene que estar,porque te va ha tirar error.
 }).then(result => {
     console.log(result);
     return"Exito3!";
