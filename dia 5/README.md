@@ -1,7 +1,7 @@
 
 ## Inline y Block etiquetas
 
-<Inline VS Block>
+<Inline vs Block>
 
 Hay 2 tipos de elemntos en HTML:Inline,Block
 
