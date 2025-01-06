@@ -5,11 +5,11 @@ Javascript nos ofrece una variedad de metodods para manipular una cadenas de tex
 
 a.  toUpperCase() y toLowerCase()
 
-Convierte todas las letras de una cadena en mayusculas.
+Convierte todas las letras de una cadena en mayusculas o minisuculas.
 
 
 b. split()
- -Divide una d¡cadena en una lista/array basada en un seperador.Crea una lista con comillas divide palabra por palabra con comillas " !!!!!!
+ -Divide una cadena en una lista/array basada en un seperador.Crea una lista con comillas divide palabra por palabra con comillas " !!!!!!
 
  c. slice()
  -Extrae una porcion de la cadena basada en indices de inicio y fin.

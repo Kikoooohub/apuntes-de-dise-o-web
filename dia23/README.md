@@ -27,7 +27,7 @@ metodos:queryselectos.log
 
 Orientada a objetos:
 
-JS utiliza un paradigma(OOP),lo que significa que organiza el codigo en "objetos".Un objeto es una coleccion de propiedades y metododoso que se pueden leer y manipular.
+JS utiliza un paradigma(OOP),lo que significa que organiza el codigo en "objetos".Un objeto es una coleccion de propiedades y metododos que se pueden leer y manipular.
 
 Perro
 //Propiedades
@@ -153,7 +153,7 @@ fucntion sumar(a,b){
 
 /*-----------------------------------------------+
 +         Aca empieza el codigo de la Galeria    +
-+----------------------------------------------+*/
++-----------------------------------------------+*/
 
 
 ```
@@ -161,7 +161,7 @@ fucntion sumar(a,b){
 ## Tipos de datos para nuestros variables
 
 -numeros:enteros,decimales,postivos,negativos.(los decimales son con   "."  .ej:3.5)
--Cadena de texto(Strings):textos,palabras,frases,1 letra.Van entre commilas dobre,triples y simples o backticks".
+-Cadena de texto(Strings):textos,palabras,frases,1 letra.Van entre commilas doble,triples y simples o backticks".
 
 -Booleanos:True/False (true,false).
 -Lista de cosas(Arrays):Se escriben entre corchetes[] y se separan con comas ",".
@@ -200,15 +200,15 @@ let esMenorDeEdad=true;
 
 const alumnosDeDW= ("Daniel","Jaime","Laura",)
 const edades =(25,32,30,29);
-const listaMix = [1,"Juan",true" {edad:18,nombre:"Laura"};
+const listaMix = [1,"Juan",true {edad:18,nombre:"Laura"}]
 
 const listaCompras=["tomate","lechuga"];
-listaCompras=["tomate,"Lechuga","papa"];//OK
+listaCompras=["tomate","Lechuga","papa"];//OK
 
 console.log(listaCompras[0]);//tomate
 console.log(listaCompras[2]);//papa
 
-}
+
 
 
 

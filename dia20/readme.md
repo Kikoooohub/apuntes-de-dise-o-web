@@ -4,7 +4,7 @@ Ver emmet.html
 
 # Variables Css
 
-Se pueden craer variables para reutilizar valores en distintas partes del codigo
+Se pueden crear variables para reutilizar valores en distintas partes del codigo
 
 -Mejorar la legibilidad del codigo
 Facilitar la actualizacion de los valores

@@ -7,7 +7,7 @@ La diferencia entre uno y otro es que el forEach  no retorna nada,mientras que e
 ```js
 
 const numeros = [1,2,3,4,5];
-cosnt cuadrados = [];
+const cuadrados = [];
 
 
 // Ejemplo utilizando forEach
@@ -49,7 +49,7 @@ const tieneTesla = lista_coches.some( coche => coche === "Tesla" );
 console.log(tieneTesla);
 
 
-// Every 
+// Every  // devuelve true si todos empiezan con B
 const todosEmpiezanConB = lista_coches.every(coche => coche [0] === "B");
 cosnole.log(todosEmpiezanConB);// false;
 

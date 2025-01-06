@@ -33,7 +33,7 @@ let res2 = cuadrado(5); // 25
 const cubo = (a) => {
     return a * a * a;
 }
-cosnt res3 = cubo(3); //27
+const res3 = cubo(3); //27
 
 
 

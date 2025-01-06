@@ -34,7 +34,7 @@ saludar();// Hola Juan
 ```
 # Local
            
-     Son varibale definidas dentro de funciones.
+     Son varibales definidas dentro de funciones.
 
      ```js
      function saludar(){
@@ -51,7 +51,7 @@ saludar();// Hola Juan
 ## Bloque
 
 Las variables con`let`o `const` dentro de un  bloque
-(`{}`) solo accesesible dentro de ese bloque.Algunos ejemplos de bloque son `son` p
+(`{}`) solo accesesible dentro de ese bloque.Algunos ejemplos de bloque son `son` o
 `for`.
 
     

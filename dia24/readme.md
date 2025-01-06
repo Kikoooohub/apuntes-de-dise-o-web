@@ -14,7 +14,7 @@ let edad = Number("hola como andan"?);//NaN
 ## otros tipos de datos
 
 -funcion
--fecha => 
+-flecha => 
 
 ```js
 

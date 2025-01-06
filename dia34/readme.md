@@ -5,7 +5,7 @@
 Añade un nuevo item
 
 ```javascript 
-let frutas = [Manzanas,"Naranjas","Platanos"] 
+let frutas = ["Manzanas","Naranjas","Platanos"] 
 
 let nuevaLongitud = frutas.push("Peras","Bananas");
 console.log(nuevaLongitud);
@@ -22,7 +22,7 @@ console.log(frutas);
 // eliminida el pirmer elemto del array y lo devuelve.
 
 let elementoQuitado = frutas.shift();
-console.log(elemtnoQuitado);// Manzanza
+console.log(elemetnoQuitado);// Manzanza
 cossole.log(frutas);//[Naranjas ,Platanos Peras]
 
 //Unshift
@@ -49,6 +49,6 @@ console.log(frutas);//[sandia,melon,kiwi,frutilla,platanos,peras
 
 
 frutas.splice(0,1)// quitando el primer elemento
-frutas.splice(.1,1)// quitando el ultimo elemento
+frutas.splice(-1,1)// quitando el ultimo elemento
 frutas.splice(2,2)//quitar 2 elemntos a partir del 2 idice
 frutas.splice(-1,0,"Mandarina","Papaya"); //[...]

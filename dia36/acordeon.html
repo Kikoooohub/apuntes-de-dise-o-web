@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acordeon JS</title>
 
     <style>
-.acordeon{
-    border: 1px solid #ccc;
+        .acordeon {
+            border: 1px solid #ccc;
 
-}
-.acordeon-item{
-    padding: 5px;
-    border-bottom:1px solid #ccc;
-}
+        }
 
-.acordeon-content{
-    display: none;
-    padding: 10px;
-   
-}
-.acordeon-header{
-    background-color: rgb(102, 173, 197);
-    font-weight: 600;
-    font-size: 24px;
-    border-radius: 25px 25px ;
+        .acordeon-item {
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
 
-}
+        .acordeon-content {
+            display: none;
+            padding: 10px;
 
-/*Elementos activos*/
+        }
 
-/*acordeon-item.active .acordeon-content {}*/
-.active .acordeon-content{
-    display: block;
-}
-.active .acordeon-header{
-    background-color: lightsalmon;
+        .acordeon-header {
+            background-color: rgb(102, 173, 197);
+            font-weight: 600;
+            font-size: 24px;
+            border-radius: 25px 25px;
 
-}
+        }
+
+        /*Elementos activos*/
+
+        /*acordeon-item.active .acordeon-content {}*/
+        .active .acordeon-content {
+            display: block;
+        }
+
+        .active .acordeon-header {
+            background-color: lightsalmon;
+
+        }
     </style>
 </head>
+
 <body>
     <div class="acordeon">
 
@@ -60,46 +65,47 @@
 
         </div>
     </div>
-    
+
 
 
     <script>
 
         // 1. Declarar variables y cosntantes
-const headers = document.querySelectorAll(".acordeon-header");
-const items = document.querySelectorAll(".acordeon-item");
+        const headers = document.querySelectorAll(".acordeon-header");
+        const items = document.querySelectorAll(".acordeon-item");
 
 
         // 2. Crear funciones y listeners
         // a.) Pasar por todas las cabezeras,agregarles un click y agregar active al que le haga click
-        headers.forEach((header)=>{
+        headers.forEach((header) => {
 
-            header.addEventListener("click", ()=>{
+            header.addEventListener("click", () => {
                 const item = header.closest(".acordeon-item");
 
-//quitar el active de todos
-                items.forEach ( elemento => {
+                //quitar el active de todos
+                items.forEach(elemento => {
                     elemento.classList.remove("active");
-                }); 
+                });
 
-//agregar el active a item
+                //agregar el active a item
                 item.classList.toggle("active");
 
             });
         });
 
 
-        
-        
-        
 
 
-    //3. Ejecutar nuestros programa
 
-    //hacer click en nuestro primer elemento
-    headers[0].click();
+
+
+        //3. Ejecutar nuestros programa
+
+        //hacer click en nuestro primer elemento
+        headers[0].click();
 
 
     </script>
 </body>
+
 </html>

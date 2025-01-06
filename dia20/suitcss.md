@@ -2,7 +2,7 @@
 [SuitCSS Oficial]
 
 
-Suit CSS se utuliza en muchosframeworks como Angular,React,etc.Es una nomencaltura basada en BEM,pero con algunas diferencias.
+Suit CSS se utuliza en muchos frameworks como Angular,React,etc.Es una nomencaltura basada en BEM,pero con algunas diferencias.
 
 Sus partes son:"Componentes,"Elemntos",Modificadores","Estados" y "Utilidades"
 

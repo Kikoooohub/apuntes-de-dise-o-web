@@ -65,10 +65,10 @@ const listaAlumnos=["Maria","Alin","Alejo","Lucia","Kristiyan"];
 
 listaAlumnos.forEach( (alumno,indice) => {
     const item =indice+1;
-    console.log(`${item})
+    console.log(${item});
 console.log(`El alumno ${alumno} tiene su indice  ${indice}`);
 
-)};
+});
 
 
 
