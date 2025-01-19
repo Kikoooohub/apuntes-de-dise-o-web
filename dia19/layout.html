@@ -31,7 +31,7 @@
 <script>
 
 
-    function cambiarClases(buttonSelector, targetSelector, className) {
+    function cambiarClases(buttonSelector, targetSelector, ) {
         const lista_items = document.querySelectorAll(buttonSelector);
         const targets = document.querySelectorAll(targetSelector);
         lista_items.forEach(button => {
@@ -43,7 +43,7 @@
             });
         });
     }
-    cambiarClases(".btn-dark", "body", "open")
+    cambiarClases("#darkMode", ".Body", "open")
 </script>
 
 </html>
